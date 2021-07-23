@@ -31,7 +31,7 @@ public class BusVehicle
 {
             public static void main(String[] args)
             {
-                Bus1 myBus = new Bus1(); // Create a Car object
+                Bus1 myBus = new Bus1(); // Create a Bus object
                 int wheels = myBus.numberOfWheels();
                 myBus.start();
                 // create a new object of type Vehicle named "myVehicle"
@@ -41,20 +41,20 @@ public class BusVehicle
                 // then we can also access the methods within the myVehicle object
                 System.out.println(myVehicle.getPassengers());
                 DeluxeBus LuxuryBus= new DeluxeBus();
-                //below we are using the "make" variable which is defined in Car
+                //below we are using the "make" variable which is defined in Bus
                 LuxuryBus .make = "Volkswagon";
-                //below we are using the "model" variable which is defined in Car
+                //below we are using the "model" variable which is defined in Bus
                 LuxuryBus.model = "599 XX";
-                //below we are using the "hasSpoiler" variable which is defined in SportsCar
+                //below we are using the "hasBed" variable which is defined in DeluxeBus
                 LuxuryBus.hasBed = true;
-                //below we are using the "hasRaceTires" variable which is defined in SportsCar
+                //below we are using the "hasAc" variable which is defined in Deluxebus
                 LuxuryBus.hasAc = true;
-                //below we are using the "drive()" method which is defined in Car
+                //below we are using the "drive()" method which is defined in Bus
                 LuxuryBus.drive(20);
-                //below we are using the "getZeroToSixtyTime" method which is defined in SportsCar
+                //below we are using the "getZeroToSixtyTime" method which is defined in DeluxeBus
                 double time = LuxuryBus.getZerotoSixtyTime();
                 BusVehicle mini = new MiniBus();
-                // now invoke the start() method on the Motorcycle
+                // now invoke the start() method on the MiniBus
                 // which overrides the start() method in the Vehicle class
                 mini.start();
                 // now invoke the start() method on the Vehicle object
@@ -123,7 +123,7 @@ class Bus2
     public String model;
     public void drive(int distance)
     {
-        // some action(s) to drive the car
+        // some action(s) to drive the bus
     }
 }
 
@@ -139,7 +139,7 @@ class DeluxeBus extends Bus2 {
     }
 }
 
-        // child class Motorcycle
+        // child class MiniBus
         class MiniBus extends BusVehicle
         {
             MiniBus()

@@ -1,4 +1,3 @@
-package JavaAssignment;
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -113,7 +112,7 @@ class StudentManagement {
     }
     //Put the information about Student by pressing the required number
 
-    private static void addStu(ArrayList<Student> arr) {
+    private static void addStudent(ArrayList<Student> arr) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Please enter student ID: ");
         //Enter numeric Student Id of any Student
@@ -151,7 +150,7 @@ class StudentManagement {
         }
     }
 
-    private static void deleteStu(ArrayList<Student> arr) {
+    private static void deleteStudent(ArrayList<Student> arr) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Please enter the student ID to be deleted: ");
         //Enter Student Id which we want to Delete
@@ -168,7 +167,7 @@ class StudentManagement {
         //If Entered Incorrect then deletion will be failed.
     }
 
-    private static void setStu(ArrayList<Student> arr) {
+    private static void setStudent(ArrayList<Student> arr) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Please enter the student ID to be modified: ");
         //Enter Student Id which we have to change some things 
@@ -201,7 +200,7 @@ class StudentManagement {
     }
 
 
-    private static void allStu(ArrayList<Student> arr) {
+    private static void allStudent(ArrayList<Student> arr) {
         String[] gradeValue = {"A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "F"};
         if (arr.size() == 0) {
             System.out.println("No students");

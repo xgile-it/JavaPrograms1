@@ -6,8 +6,6 @@ import repository.StudentRepository;
 import service.StudentService;
 //import sms.entity.Student;
 import org.springframework.stereotype.Service;
-//import repository.StudentRepository;
-//import service.StudentService;
 //import sms.repository.StudentRepository;
 
 

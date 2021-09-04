@@ -1,6 +1,5 @@
 package controller;
 
-//import entity.Student;
 import entity.Student;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -8,12 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-//import service.StudentService;
 //import sms.entity.Student;
 import service.StudentService;
-
-//import net.javaguides.sms.entity.Student;
-//import net.javaguides.service.impl.StudentService;
 
 @Controller
 public class StudentController {

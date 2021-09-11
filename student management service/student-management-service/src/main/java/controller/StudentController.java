@@ -33,7 +33,6 @@ public class StudentController {
         Student student = new Student();
         model.addAttribute("student", student);
         return "create_student";
-
     }
 
     @PostMapping("/students")

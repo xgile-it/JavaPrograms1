@@ -1,13 +1,10 @@
 package service.impl;
-import java.util.List;
 
+import java.util.List;
 import entity.Student;
 import repository.StudentRepository;
 import service.StudentService;
-//import sms.entity.Student;
 import org.springframework.stereotype.Service;
-//import sms.repository.StudentRepository;
-
 
 @Service
 public class StudentServiceimpl implements StudentService {

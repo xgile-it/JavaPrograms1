@@ -17,7 +17,7 @@ import org.springframework.web.multipart.MultipartFile;
 
         public void save(MultipartFile file) {
             try {
-                List<Bank> banks = ExcelHelper.excelToTutorials(file.getInputStream());
+                List<Bank> banks = ExcelHelper.excelToBanks(file.getInputStream());
                 repository.saveAll(banks);
             } catch (IOException e) {
                 throw new RuntimeException("fail to store excel data: " + e.getMessage());

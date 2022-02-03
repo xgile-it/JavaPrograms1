@@ -21,7 +21,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
             return TYPE.equals(file.getContentType());
         }
 
-        public static List<Bank> excelToTutorials(InputStream is) {
+        public static List<Bank> excelToBanks(InputStream is) {
             try {
                 Workbook workbook = new XSSFWorkbook(is);
 
